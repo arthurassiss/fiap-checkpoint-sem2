@@ -4,6 +4,12 @@ import org.modelmapper.ModelMapper;
 
 import br.com.fiap.ecommerce.model.Produto;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+
 public class ProdutoResponseDto {
     private Long id;
 	private String nome;
@@ -19,19 +25,4 @@ public class ProdutoResponseDto {
         // return result;
     }
     
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    
-
 }
